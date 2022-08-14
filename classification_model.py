@@ -1,10 +1,3 @@
-def barw(ax):
-    for p in ax.patches:
-        val = p.get_width()  # height of the bar
-        x = p.get_x() + p.get_width()  # x- position
-        y = p.get_y() + p.get_height() / 2  # y-position
-        ax.annotate(round(val, 2), (x, y))
-
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import seaborn as sns
